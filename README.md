@@ -1,5 +1,3 @@
-# meteor-chat
-
 ```sh
 git status
 git add 
