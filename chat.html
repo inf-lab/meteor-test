@@ -1,0 +1,252 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Chat</title>
+
+  <!-- CSS  -->
+  <link href="client/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="client/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+	<!-- Materialize  -->
+	<nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Podróże</a>
+      <p class="flow-text">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="http://www.podroze.pl/">podróże.pl</a></li>
+        <li><a href="http://ruszwpodroz.pl/">Rusz w podróż</a></li>
+        <li><a href="http://www.paczkiwpodrozy.pl/">Paczki w podrozy</a></li>
+      </ul>
+	  </p>
+      <ul id="nav-mobile" class="side-nav">
+      	<li><a href="#czat">Czat podróżniczy</a></li>
+        <li><a href="http://www.podroze.pl/">podróże.pl</a></li>
+        <li><a href="http://ruszwpodroz.pl/">Rusz w podróż</a></li>
+        <li><a href="http://www.paczkiwpodrozy.pl/">Paczki w podrozy</a></li>
+        <li><a href="http://podroze.onet.pl/">podroze.onet.pl</a></li>
+        <li><a href="http://podroze.gazeta.pl/podroze/0,0.html">podroze.gazeta.pl</a></li>
+        <li><a href="http://podroze-forum.pl/">podroze-forum.pl</a></li>
+        <li><a href="http://fotografwpodrozy.pl/">fotografwpodrozy.pl</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+  <!-- Materialize  -->
+  
+  <!-- Index banner  -->
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Podróże do...</h1>
+        <div class="row center">
+          <h3 class="header col s12 light">Tanzania</h3>
+        </div>
+        
+        <br><br>
+		<div class="row center">
+          <a href="#czat" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Przejdź do czata podróżniczego</a>
+        </div>
+        <br><br>
+        
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+        	
+          <img src="globe.jpg" width="150px" height="150px" alt="" class="circle responsive-img">
+          <h4>O stronie</h4>
+          
+          <p class="flow-text left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Index banner  -->
+	<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">Chorwacja</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+  
+
+  
+  <a name="czat">
+  <div class="container">
+  	<div class="section">
+  		<div class="row">
+  			<div class="col s12 center">
+  				<p class="flow-text">
+  				
+  				{{#if currentUser}}
+        			{{> dashboard}}
+    			{{else}}
+        			{{> register}}
+        			{{> login}}
+    			{{/if}}
+  				  				
+     			{{> hello}}
+     			
+     		    </p>
+     		</div>
+     	</div>
+     </div>
+  </div>
+  </a>
+  
+  
+  <!-- Index banner  -->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h3 class="header col s12 light">Bora Bora</h3>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+  
+  <footer class="page-footer teal light-blue accent-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">O stronie</h5>
+          <p class="flow-text grey-text text-lighten-4">Strona o tematyce podróżniczej</p>
+
+		<!--  Footer-->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Strony krajowe</h5>
+          <p class="flow-text">
+          <ul>
+            <li><a class="white-text" href="http://podroze.onet.pl/">podroze.onet.pl</a></li>
+            <li><a class="white-text" href="http://podroze.gazeta.pl/podroze/0,0.html">podroze.gazeta.pl</a></li>
+            <li><a class="white-text" href="http://podroze-forum.pl/">podroze-forum.pl</a></li>
+            <li><a class="white-text" href="http://fotografwpodrozy.pl/">fotografwpodrozy.pl</a></li>
+          </ul>
+          </p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Strony zagraniczne</h5>
+          <p class="flow-text">
+          <ul>
+            <li><a class="white-text" href="http://www.tripadvisor.com/">tripadvisor.com</a></li>
+            <li><a class="white-text" href="http://www.lonelyplanet.com/">lonelyplanet.com</a></li>
+            <li><a class="white-text" href="http://www.roughguides.com/">roughguides.com</a></li>
+            <li><a class="white-text" href="http://www.frommers.com/">frommers.com</a></li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+         <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+  <!--  Footer-->
+  
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="client/js/materialize.js"></script>
+  <script src="client/js/init.js"></script>
+  <!--  Scripts-->
+</body>
+
+<template name="register">
+	<div class="widget-item z-depth-1">
+<form>
+    
+<div class="input-field col s12">
+<i class="mdi-action-account-circle prefix"></i>
+<input type="user" id="register-user" class="validate">
+<label for="username">login</label>
+</div>
+
+<div class="input-field col s12">
+<i class="mdi-action-account-circle prefix"></i>
+<input type="email" id="register-email" class="validate">
+<label for="email">e-mail</label>
+</div>
+
+<div class="input-field col s12">
+<i class="mdi-action-https prefix"></i>
+<input type="password" id="register-password" class="validate">
+<label for="password">hasło</label>
+</div>
+
+    <button class="btn waves-effect waves-light" type="submit">
+Zarejestruj się<i class="mdi-action-lock-open right"></i></button>
+
+</form>
+</div>
+</template>
+
+<template name="login">
+	<div class="widget-item z-depth-1">
+<form>
+
+<div class="input-field col s12">
+<i class="mdi-action-account-circle prefix"></i>
+<input type="email" id="login-email" class="validate">
+<label for="email">e-mail</label>
+</div>
+
+<div class="input-field col s12">
+<i class="mdi-action-https prefix"></i>
+<input type="password" id="login-password" class="validate">
+<label for="password">hasło</label>
+</div>
+
+    <button class="btn waves-effect waves-light" type="submit">
+Zaloguj się<i class="mdi-action-lock-open right"></i></button>
+</form>
+</div>
+</template>
+
+<template name="dashboard">
+    <p>You're logged in.</p>
+    <p><a href="#" class="logout">Logout</a></p>
+</template>
+
+<template name="hello">
+  <!-- {{> loginButtons}} -->
+		
+  <br/><br/>
+  <div class="widget-item z-depth-1">
+  <form class="chat-form">
+  	<i class="mdi-editor-mode-edit prefix"></i>
+    <textarea name="message" id="icon_prefix2" class="materialize-textarea"></textarea>
+    <br/>
+    <button class="btn waves-effect waves-light" type="submit" name="action">Napisz wiadomość
+    <i class="mdi-content-send right"></i>
+  </button>
+  </form>
+  </div>
+  
+  {{#each messages}}
+    <p>{{username}}: {{text}}</p>
+  {{/each}}
+
+  {{#unless currentUser}}
+    <p>Proszę zalogować się aby zobaczyć i pisać wiadomości</p>
+  {{/unless}}
+</template>
